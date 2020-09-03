@@ -1,0 +1,15 @@
+ul {
+    list-style-image: url("/images/sqpuple.gif");
+    list-style-position: outside;
+    background-color: chartreuse;
+
+}
+
+li {
+    border: 1px solid black;
+}
+
+li:before{
+    content: "";
+    color: blue;
+}

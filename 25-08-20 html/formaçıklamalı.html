@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+​
+<body>
+​
+   
+    <form action="result.html" method="GET" id="form1">
+    <!-- action form a girdğimiz bilgi nereye gidecek onu gösterir, method POST ya da GET secilir, default değer GET,kritik bilgi varsa GET olmalı-->
+    <!-- inputa girilen değerin yazılım tarafından(back-end de) alınması için,  her inputa name değerini mutlaka girmeliyiz-->
+    
+            <label for="username">User Name</label>
+            <!-- sayfada kullanıcı adına tıkladığında boşluk altif olsun istiyoruz. bu da inputun id si labelin for a yazarak olur.-->
+            
+            <input id="username" name="username" type="text" value="Abdullah">
+            <!-- yazı yazmak için text, value değeri sitede açılışta duracak, kullanıcı değiştirilebilir, disabled yaparsam kullanıcı o kısmı değiştiremez--><br><br>
+            <label for="password">Password</label>
+            <input placeholder="Enter your password" name="password" id="password" type="password" maxlength="6" required>
+            <!-- şifre için password type sectim, required olursa kullanıcı o kısmı doldurmadan form gönderemez, maks karakter 6, placeholder başlangıçta boş kutuda bi yazı(ipucu) yazdırıyo --><br><br>
+            <label for="email">E-Mail</label>
+            <input id="email" type="email" name="email" required> <br><br> <!-- kullanıcı email adresi girmezsee hata verir, formu gönderemez,  @ işaretini görmek ister, kabul etmez-->
+            
+       
+            <label for="file">Add File</label>
+            <input id="file" type="file" name="file">
+            <!-- herhangi bir dosya secmek için, multiple  dersem birden fazla dosya secilebilir--><br>
+​
+            <label>
+            <input type="checkbox" checked>I agree to terms and conditions
+            <!-- label içine alırsak yazıya dokununca da kutu seçilir , checked yapınca otomatik seçili gelecek-->
+            </label>
+             <br>
+            <label>
+            <input type="checkbox">Clarusway may use my information  
+            </label>
+            <br><br>
+            <label>
+            <input type="radio" name="gender" value="male"> Male
+            <!-- ikisinden birini secsin diye aynı name verdik, value ler farklı,seçildiğinde name=value olacak, forma o gidecek-->
+            </label>
+            <label>
+            <input type="radio" name="gender" value="female"> Female
+            <!-- ikisinden birini secsin diye aynı name verdik,value farklı, seçildiğinde name eşittit value olacak-->
+            </label>
+            <br> <br>
+            
+            <label> Favorite Color
+                <input type="color">
+            </label> <br> <br>
+            <label> Date
+                <input type="date">
+            </label> <br> <br>
+            <label> Datetime-Local
+                <input type="datetime-local">
+            </label> <br> <br>
+            <label> Month
+                <input type="month">
+            </label> <br> <br>
+            <label> Week
+                <input type="week">
+            </label> <br> <br>
+            <label> Age
+                <input type="number" max="15" min="5"> <!-- min ve maks değerler verebiliyoruz-->
+            </label> <br> <br>
+            <label> Income
+                <input type="range" max="50000" min="1000" step="100"> <!-- step artış miktarını belirler-->
+            </label> <br> <br>
+            <label> Search
+                <input type="search" autofocus>
+                <!-- kutuya yazdıktan sonra iptal edebilme/silme çarpısı search type da çıkıyo, autofocus ile siteye girer girmez o haneye oto-focus yapacak, autofocus özellğini arama motorları kullanıyo  -->
+            </label> <br> <br>
+            <label> URL
+                <input type="url">
+               <!-- http ile başlayan birşeyler istiyo-->
+            </label> <br> <br>
+            
+​
+            <label>Programming Language : <input list="lang" name="prog_lang"></label>
+            <datalist id="lang"> <!-- input un list i ile data list in id si aynı olmalı-->
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+            </datalist> <br> <br>
+​
+​
+            <label>Choose a programming language:</label><br>
+​
+            <select name="language" id="second_lang">
+                <optgroup label="Front-End Dilleri"> <!-- burdaki label sadece baslık olsun diye verdim-->
+                    <option value="css">CSS</option> <!-- value lar önemli, sectiğimde name= value olacak, ve forma o değer gönderilecek-->
+                    <option value="css" selected >HTML</option> <!-- selected dediğim için ekranda ilk görünen secenek HTML olacak-->
+                     <option value="css">JS</option>
+                </optgroup>
+​
+                <optgroup label="Back-End Dilleri">
+                    <option value="php">PHP</option>
+                    <option value="js">JS</option>
+                    <option value="python">python</option>
+                </optgroup>
+            </select> <br> <br>
+            <label for="comments">Comments</label> <br><br>
+            <textarea name="comments" cols="40" rows="40" id="comments" placeholder="Enter your comments"> </textarea>
+            <!--inputta tek satır bilgi giriliyordu, text area da çok satırlı bilgi girilsin diye kullanılıyor, satır sütun sayısı belirleyebiliyoruz-->
+            <br> <br>
+   
+    
+​
+            <input type="submit" value="Send"> <br> <br> <!--value ya atadığımız değer buton üzerinde görülür, hiçbirşey yazmazsak gönder yazar-->
+             <input type="reset" value="Reset"> <br><br>
+​
+             <!-- button elementi kullarak da yapabilirdik, <button type="submit">Send</button>, inputtaki gönder butonu ile aynı işlemi yapıyo-->
+​
+    
+</body>
+​
+</html>

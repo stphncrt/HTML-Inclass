@@ -1,0 +1,9 @@
+a:link{
+    color:red;
+    text-decoration: none;
+}
+
+a:visited{
+    color:rgb(80,150,80);
+    text-decoration: overline;
+}

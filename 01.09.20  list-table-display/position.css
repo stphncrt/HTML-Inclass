@@ -1,0 +1,18 @@
+.box{
+    width: 120px;
+    height: 120px;
+}
+#first{
+    background-color: red;
+}
+
+#second{
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+#third{
+    background-color: blue;
+}

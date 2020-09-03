@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#div1 {
+    display: inline-block;
+    background-color: red;
+    width: 400px;
+    height: 200px;
+    
+}
+
+#span-1 {
+    display: inline-block; /*inline-block yapmasak ,height ve width uygulayamayız*/
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+}
+
+#span-2 {
+    background-color: blue;
+    display: none;
+    /*visibility: hidden;*/
+
+}
+
+#div2 {
+    background-color: darkviolet;
+}
