@@ -1,0 +1,11 @@
+/*div + p  {
+    background-color: mediumspringgreen;
+}*/
+
+p +p {
+    background-color: mediumturquoise;
+}
+
+div ~ p {
+    background-color: mediumvioletred;
+}

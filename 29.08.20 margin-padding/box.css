@@ -1,0 +1,15 @@
+h4{
+    color: #000000;
+    padding: 50px blue;
+    border:40px blueviolet solid ;
+    margin: 70px;
+    background-color: deeppink;
+    /*width: max-content;*/
+}
+
+p{
+    background-color: darksalmon;
+    color: cyan;
+   /* padding: yellow 30px;*/
+    border: darkcyan solid 25px;
+    /*margin: 100px;*/

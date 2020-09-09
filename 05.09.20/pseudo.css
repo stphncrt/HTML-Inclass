@@ -1,0 +1,35 @@
+
+
+a:link{
+    color: salmon;
+}
+
+a:visited{
+    color: black;
+
+}
+
+a:hover{
+    color: mediumspringgreen;
+}
+
+a{
+
+margin: 40px;
+outline: 5px solid aquamarine; 
+transition: all ease-in-out 300ms;
+}
+
+#link:hover{
+    color: brown;
+    cursor: progress;
+}
+
+p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+div:hover + p{
+    display: block;
+}
